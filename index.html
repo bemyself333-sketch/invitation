@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025년 하반기 부부모임 초대장</title>
+    <meta property="og:image" content="https://bemyself333-sketch.github.io/invitation/images/thumbnail.PNG">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -312,16 +313,18 @@
             box-shadow: 0 5px 15px var(--shadow-subtle);
         }
         
-        .direction-image-wrapper img {
+        .direction-image-wrapper {
             width: 100%;
-            height: 100%;
-            object-fit: contain; /* cover 대신 contain 사용 */
-            transition: transform 0.3s ease;
-            background-color: #f0f0f0; /* 빈 공간이 생길 경우를 대비한 배경색 */
+            height: auto; /* 고정 높이 대신 auto */
+            min-height: 200px; /* 최소 높이만 지정 */
+            /* 나머지는 동일 */
         }
 
-        .direction-image-wrapper img:hover {
-            transform: scale(1.03);
+        .direction-image-wrapper img {
+            width: 100%;
+            height: auto; /* 높이를 auto로 */
+            object-fit: none; /* object-fit 제거 */
+            /* 나머지는 동일 */
         }
         
         .notice {
