@@ -299,16 +299,10 @@
         
         .direction-image-wrapper {
             width: 100%;
-            height: auto; /* 250px에서 auto로 변경 */
-            min-height: 200px; /* 최소 높이만 지정 */
-            max-height: 550px;
+            height: auto;
             background: #e9ecef;
             border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #adb5bd;
-            font-size: 15px;
+            display: block; /* flex에서 block으로 변경 */
             overflow: hidden;
             border: 2px solid var(--border-light);
             box-shadow: 0 5px 15px var(--shadow-subtle);
@@ -316,10 +310,9 @@
 
         .direction-image-wrapper img {
             width: 100%;
-            height: auto; /* 100%에서 auto로 변경 */
-            object-fit: none; /* contain 제거 */
+            height: auto;
+            display: block; /* 추가 */
             transition: transform 0.3s ease;
-            background-color: transparent; /* f0f0f0에서 transparent로 변경 */
         }
         
         .notice {
@@ -450,8 +443,6 @@
             }
 
             .direction-image-wrapper {
-                height: auto; /* 200px에서 auto로 변경 */
-                min-height: 150px; /* 최소 높이 추가 */
                 border-radius: 12px;
             }
             
