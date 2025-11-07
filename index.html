@@ -299,7 +299,8 @@
         
         .direction-image-wrapper {
             width: 100%;
-            height: 250px; /* 고정 높이 */
+            height: auto; /* 250px에서 auto로 변경 */
+            min-height: 200px; /* 최소 높이만 지정 */
             max-height: 550px;
             background: #e9ecef;
             border-radius: 14px;
@@ -312,19 +313,13 @@
             border: 2px solid var(--border-light);
             box-shadow: 0 5px 15px var(--shadow-subtle);
         }
-        
-        .direction-image-wrapper {
-            width: 100%;
-            height: auto; /* 고정 높이 대신 auto */
-            min-height: 200px; /* 최소 높이만 지정 */
-            /* 나머지는 동일 */
-        }
 
         .direction-image-wrapper img {
             width: 100%;
-            height: auto; /* 높이를 auto로 */
-            object-fit: none; /* object-fit 제거 */
-            /* 나머지는 동일 */
+            height: auto; /* 100%에서 auto로 변경 */
+            object-fit: none; /* contain 제거 */
+            transition: transform 0.3s ease;
+            background-color: transparent; /* f0f0f0에서 transparent로 변경 */
         }
         
         .notice {
